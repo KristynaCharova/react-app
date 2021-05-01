@@ -22,8 +22,6 @@ export default function Weather() {
             <li>{weatherData.date}</li>
             <li>{weatherData.description}</li>
           </ul>
-        </div>
-        <div className="col-6">
           <ul>
             <li>
               Wind: <span>{weatherData.wind}</span> m/h
@@ -32,6 +30,8 @@ export default function Weather() {
               Humidity:<span>{weatherData.humidity}</span>%
             </li>
           </ul>
+        </div>
+        <div className="col-6">
           <ReactAnimatedWeather
             icon="RAIN"
             color="#000"
