@@ -38,7 +38,7 @@ export default function Weather() {
           <ReactAnimatedWeather
             icon="RAIN"
             color="#000"
-            size={150}
+            size={120}
             animate={true}
           />
           <span className="temperature">{weatherData.temperature}</span> °C
