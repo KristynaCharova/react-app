@@ -1,0 +1,26 @@
+.Weather {
+  color: rgb(53, 48, 48);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 10px 0 0;
+}
+
+.Weather ul {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.Weather li {
+  color: rgb(53, 48, 48);
+  font-size: 16px;
+  font-weight: 500;
+  height: 18px;
+  line-height: 1;
+  list-style: none;
+}
+
+.Weather .temperature {
+  font-size: 30px;
+  font-weight: 500;
+}

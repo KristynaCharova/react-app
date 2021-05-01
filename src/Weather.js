@@ -1,5 +1,8 @@
 import React from "react";
 import Form from "./Form";
+
+import "./Weather.css";
+
 import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather() {
@@ -27,15 +30,15 @@ export default function Weather() {
               Wind: <span>{weatherData.wind}</span> m/h
             </li>
             <li>
-              Humidity:<span>{weatherData.humidity}</span>%
+              Humidity: <span>{weatherData.humidity}</span>%
             </li>
           </ul>
         </div>
-        <div className="col-6">
+        <div className="col-6 main-icon">
           <ReactAnimatedWeather
             icon="RAIN"
             color="#000"
-            size={75}
+            size={150}
             animate={true}
           />
           <span className="temperature">{weatherData.temperature}</span> °C

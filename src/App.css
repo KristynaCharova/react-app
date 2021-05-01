@@ -3,5 +3,11 @@
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 550px;
+  background: linear-gradient(
+    111.1deg,
+    rgb(104 159 202) -4.8%,
+    rgb(255, 115, 115) 82.7%,
+    rgb(255, 175, 123) 97.2%
+  );
 }
