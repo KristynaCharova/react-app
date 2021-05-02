@@ -4,6 +4,7 @@
   font-weight: 100;
   line-height: 28px;
   margin: 10px 0 0;
+  padding: 16px;
 }
 
 .Weather ul {
@@ -20,7 +21,24 @@
   list-style: none;
 }
 
+.Weather strong {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+  margin-left: 5px;
+}
+
 .Weather .temperature {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 500;
+}
+
+.Weather .main-icon {
+  height: 64px;
+  width: 64px;
+  margin-top: 25px;
+  display: inline-block;
 }

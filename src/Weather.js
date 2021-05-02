@@ -41,7 +41,8 @@ export default function Weather() {
             size={120}
             animate={true}
           />
-          <span className="temperature">{weatherData.temperature}</span> °C
+          <span className="temperature">{weatherData.temperature}</span>
+          <strong>°C</strong>
         </div>
       </div>
     </div>
