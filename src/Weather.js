@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Form from "./Form";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 import Loader from "react-loader-spinner";
@@ -15,7 +16,7 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "Saturday 18:35",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -30,7 +31,9 @@ export default function Weather(props) {
           <div className="col-6">
             <h1>{weatherData.city}</h1>
             <ul>
-              <li>{weatherData.date}</li>
+              <li>
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li className="text-capitalize">{weatherData.description}</li>
             </ul>
             <ul>
