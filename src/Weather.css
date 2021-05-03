@@ -21,16 +21,6 @@
   list-style: none;
 }
 
-.Weather strong {
-  color: rgb(33, 33, 33);
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  line-height: 1;
-  top: -34px;
-  margin-left: 5px;
-}
-
 .Weather form {
   margin: -10px 0 0 0;
 }
@@ -47,4 +37,17 @@
   font-size: 75px;
   font-weight: 500;
   margin-left: 8px;
+  color: #353030;
+  position: relative;
+  bottom: 88px;
+  left: 100px;
+  line-height: 1;
+}
+
+.Weather .unit {
+  position: relative;
+  bottom: 129px;
+  left: 100px;
+  font-size: 15px;
+  font-weight: 500;
 }
