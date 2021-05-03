@@ -31,14 +31,20 @@
   margin-left: 5px;
 }
 
-.Weather .temperature {
-  font-size: 64px;
-  font-weight: 500;
+.Weather form {
+  margin: -10px 0 0 0;
 }
 
-.Weather .main-icon {
-  height: 64px;
-  width: 64px;
-  margin-top: 25px;
+.Weather canvas {
+  height: 75px;
+  width: 75px;
+  margin-top: 50px;
+  margin-left: 30px;
   display: inline-block;
+}
+
+.Weather .temperature {
+  font-size: 75px;
+  font-weight: 500;
+  margin-left: 8px;
 }

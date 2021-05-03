@@ -9,7 +9,7 @@ export default function App() {
         <Weather defaultCity="Prague" />
       </div>
       <footer>
-        Open-sourced projected on{" "}
+        Open-sourced{" "}
         <a
           href="https://github.com/KristynaCharova/react-app"
           target="noreferrer"
