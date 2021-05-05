@@ -23,10 +23,19 @@ export default function WeatherData(props) {
               Humidity: <span>{props.data.humidity}</span>%
             </li>
           </ul>
+          <div className=" current-weather-info">
+            <ul>
+              <li>Feels Like: {Math.round(props.data.feelsLike)}</li>
+              <li>Max: {Math.round(props.data.tempMax)}°C</li>{" "}
+              <li>Min: {Math.round(props.data.tempMin)}°C</li>
+            </ul>
+          </div>
         </div>
         <div className="col-6">
-          <WeatherIcon code={props.data.icon} />
-          <UnitConversion metric={props.data.temperature} />
+          <div className="current-weather">
+            <WeatherIcon code={props.data.icon} size={75} />
+            <UnitConversion metric={props.data.temperature} />{" "}
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import DailyForecast from "./DailyForecast";
 
 import "./Weather.css";
 
@@ -13,6 +14,9 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
+      tempMax: response.data.main.temp_max,
+      tempMin: response.data.main.temp_min,
+      feelsLike: response.data.main.feels_like,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -61,6 +65,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherData data={weatherData} />
+        <DailyForecast />
       </div>
     );
   } else {
