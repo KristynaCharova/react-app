@@ -17,7 +17,7 @@ export default function WeatherData(props) {
           </ul>
           <ul>
             <li>
-              Wind: <span>{props.data.wind}</span> m/h
+              Wind: <span>{props.data.wind}</span> km/h
             </li>
             <li>
               Humidity: <span>{props.data.humidity}</span>%
@@ -25,9 +25,9 @@ export default function WeatherData(props) {
           </ul>
           <div className=" current-weather-info">
             <ul>
-              <li>Feels Like: {Math.round(props.data.feelsLike)}</li>
-              <li>Max: {Math.round(props.data.tempMax)}°C</li>{" "}
-              <li>Min: {Math.round(props.data.tempMin)}°C</li>
+              <li>Feels Like: {Math.round(props.data.feelsLike)} °C</li>
+              <li>Max: {Math.round(props.data.tempMax)} °C</li>{" "}
+              <li>Min: {Math.round(props.data.tempMin)} °C</li>
             </ul>
           </div>
         </div>
