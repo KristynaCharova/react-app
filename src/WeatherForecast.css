@@ -1,0 +1,12 @@
+.WeatherForecast {
+  text-align: center;
+  font-weight: 500;
+}
+
+.WeatherForecast .WeatherForecast-temp-min {
+  margin-left: 5px;
+}
+
+.WeatherForecast canvas {
+  margin: 5px;
+}
