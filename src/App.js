@@ -9,12 +9,12 @@ export default function App() {
         <Weather defaultCity="Prague" />
       </div>
       <footer>
-        Open-sourced project{" "}
+        Open-sourced project on{" "}
         <a
           href="https://github.com/KristynaCharova/react-app"
           target="noreferrer"
         >
-          on Github
+          Github
         </a>{" "}
         hosted on
         <a href="https://elastic-raman-61331b.netlify.app/" target="noreferrer">
